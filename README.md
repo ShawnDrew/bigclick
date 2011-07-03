@@ -1,20 +1,17 @@
 # bigclick - create a larger clickable area 
 
 * Version: 0.1
-
-## Author
-
-Shawn Drew - http://shawndrew.me
+* By: Shawn Drew - http://shawndrew.me
 
 ## Description
 
-Handling a larger click area based on a child anchors href attribute
+Handling a larger click area based on a child anchor href attribute
 
 ## Usage
 
-Basic
+Minimal
 
-	$('selector').bigClick({option: value});
+	$('selector').bigClick();
 	
 With options
 
@@ -25,10 +22,10 @@ With options
 
 ## Options
 
-The plugin takes 3 options:
+The plugin takes 2 options:
+
+	// Adds a class to element on success
+	addClass: 'big-click' (default: false)
 
 	// Will use provided selector for link source
-	anchorSelector:   (default: a:first)
-
-	// Adds a class to 
-	addClass:  (default: false)
+	anchorSelector: 'a:last' (default: a:first)
